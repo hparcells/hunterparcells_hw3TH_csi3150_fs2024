@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Setup */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: #000000;
 
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+}
 input, textarea {
   border: 2px solid #ffffff;
   outline: none;
@@ -27,14 +34,87 @@ input:focus, textarea:focus {
   border: 2px solid #f3c10a;
 }
 
-body {
-  background: #000000;
+.button {
+  width: 200px;
+  height: 50px;
 
-  font-family: "Montserrat", sans-serif;
+  background: #f3c10a;
   color: #ffffff;
-  font-size: 18px;
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+
+  cursor: pointer;
+
+  border: none;
+
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  opacity: 0.9;
 }
 
+/* Font */
+.big {
+  font-size: 156px;
+  font-family: "Crimson Text", serif;
+}
+.call {
+  font-size: 92px;
+  font-family: "Crimson Text", serif;
+}
+.title {
+  font-size: 48px;
+  font-family: "Crimson Text", serif;
+}
+.section-heading {
+  font-size: 32px;
+  font-family: "Crimson Text", serif;
+}
+.subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.yellow {
+  color: #f3c10a;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-col {
+  flex-direction: column;
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-32 {
+  gap: 32px;
+}
+.gap-64 {
+  gap: 64px;
+}
+.gap-92 {
+  gap: 92px;
+}
+
+/* Sections */
 .section {
   position: relative;
 }
@@ -63,66 +143,8 @@ body {
   min-height: 50vh;
 }
 
-.flex {
-  display: flex;
-}
-.justify-center {
-  justify-content: center;
-}
-.align-start {
-  align-items: flex-start;
-}
-.align-center {
-  align-items: center;
-}
-.wrap {
-  flex-wrap: wrap;
-}
-.flex-col {
-  flex-direction: column;
-}
 .section.flex-col {
   padding: 64px;
-}
-.gap-8 {
-  gap: 8px;
-}
-.gap-16 {
-  gap: 16px;
-}
-.gap-32 {
-  gap: 32px;
-}
-.gap-64 {
-  gap: 64px;
-}
-.gap-92 {
-  gap: 92px;
-}
-
-.big {
-  font-size: 156px;
-  font-family: "Crimson Text", serif;
-}
-.call {
-  font-size: 92px;
-  font-family: "Crimson Text", serif;
-}
-.title {
-  font-size: 48px;
-  font-family: "Crimson Text", serif;
-}
-.section-heading {
-  font-size: 32px;
-  font-family: "Crimson Text", serif;
-}
-.subtitle {
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.yellow {
-  color: #f3c10a;
 }
 
 .locations {
@@ -193,25 +215,6 @@ body {
 .fa-chevron-down {
   font-size: 82px;
   color: #f3c10a;
-}
-
-.button {
-  width: 200px;
-  height: 50px;
-
-  background: #f3c10a;
-  color: #ffffff;
-  font-family: "Crimson Text", serif;
-  font-size: 24px;
-
-  cursor: pointer;
-
-  border: none;
-
-  transition: all 0.2s ease-in-out;
-}
-.button:hover {
-  opacity: 0.9;
 }
 
 .icons > i {
