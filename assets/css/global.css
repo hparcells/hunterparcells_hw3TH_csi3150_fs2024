@@ -3,3 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: #000000;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+}
+.section > .bg-image {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+
+  opacity: 0.5;
+}
+.section-full {
+  height: 100vh;
+}
+.section-1 {
+  min-height: 50vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
