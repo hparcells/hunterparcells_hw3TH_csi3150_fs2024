@@ -244,3 +244,33 @@ input:focus, textarea:focus {
 .icons > i:hover {
   transform: scale(1.1);
 }
+
+/* Carousel */
+.carousel-section {
+  position: relative;
+}
+.carousel-section > .fa-solid {
+  position: absolute;
+  top: 50%;
+
+  font-size: 64px;
+  color: #f3c10a;
+
+  cursor: pointer;
+}
+.carousel-section > .fa-chevron-left {
+  left: 16px;
+}
+.carousel-section > .fa-chevron-right {
+  right: 16px;
+}
+.carousel-image {
+  flex: 1;
+}
+.carousel-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0.75;
+}
