@@ -1,30 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+input, textarea {
+  border: 2px solid #ffffff;
+  outline: none;
+
+  padding: 12px;
+
+  background: transparent;
+
+  transition: all 0.2s ease-in-out;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+input:focus, textarea:focus {
+  border: 2px solid #f3c10a;
+}
+
 body {
   background: #000000;
+
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
   position: relative;
 }
 .section > .bg-image {
+  opacity: 0.5;
+}
+.bg-image {
   width: 100%;
   height: 100%;
 
   position: absolute;
   object-fit: cover;
-  z-index: -1;
+  z-index: -2;
+}
+.section-half {
+  flex: 1;
+  max-width: 800px;
+  flex-basis: 400px;
 
-  opacity: 0.5;
+  padding: 64px;
 }
 .section-full {
   height: 100vh;
@@ -35,10 +65,163 @@ body {
 
 .flex {
   display: flex;
+}
+.justify-center {
   justify-content: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
   align-items: center;
 }
-
-.flex-column {
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-col {
   flex-direction: column;
+}
+.section.flex-col {
+  padding: 64px;
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-32 {
+  gap: 32px;
+}
+.gap-64 {
+  gap: 64px;
+}
+.gap-92 {
+  gap: 92px;
+}
+
+.big {
+  font-size: 156px;
+  font-family: "Crimson Text", serif;
+}
+.call {
+  font-size: 92px;
+  font-family: "Crimson Text", serif;
+}
+.title {
+  font-size: 48px;
+  font-family: "Crimson Text", serif;
+}
+.section-heading {
+  font-size: 32px;
+  font-family: "Crimson Text", serif;
+}
+.subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.yellow {
+  color: #f3c10a;
+}
+
+.locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 16px;
+
+  width: 450px;
+  height: 600px;
+
+  position: relative;
+}
+.location-content {
+  padding: 1em
+}
+.location >.bg-image {
+  z-index: -1;
+}
+.location-content > .fa-chevron-down {
+  font-size: 64px;
+}
+
+.stat-circle {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: #000000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 1em;
+}
+.stat-circle > p:first-child {
+  font-size: 92px;
+  font-family: "Crimson Text", serif;
+  color: #f3c10a;
+}
+.stat-circle > p:last-child {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background-image: url('../img/profile.png');
+  background-size: cover;
+}
+
+.fa-chevron-down {
+  font-size: 82px;
+  color: #f3c10a;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+
+  background: #f3c10a;
+  color: #ffffff;
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+
+  cursor: pointer;
+
+  border: none;
+
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  opacity: 0.9;
+}
+
+.icons > i {
+  font-size: 32px;
+  color: #f3c10a;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+.icons > i:hover {
+  transform: scale(1.1);
 }
