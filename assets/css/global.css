@@ -173,6 +173,8 @@ input:focus, textarea:focus {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+
+  width: 100%;
 }
 
 .location {
